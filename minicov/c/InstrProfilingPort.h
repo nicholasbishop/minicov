@@ -61,7 +61,7 @@
 #endif
 
 #if COMPILER_RT_HAS_ATOMICS == 1
-#ifdef _WIN32
+#ifdef _BISHOP
 #include <windows.h>
 #if defined(_MSC_VER) && _MSC_VER < 1900
 #define snprintf _snprintf
@@ -108,7 +108,7 @@
   (((ch) == DIR_SEPARATOR) || ((ch) == DIR_SEPARATOR_2))
 #endif /* DIR_SEPARATOR_2 */
 
-#if defined(_WIN32)
+#if defined(_BISHOP)
 #include <windows.h>
 static inline size_t getpagesize() {
   SYSTEM_INFO S;

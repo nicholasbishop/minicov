@@ -15,7 +15,9 @@ fn main() {
         "c/InstrProfilingBuffer.c",
         "c/InstrProfilingInternal.c",
         "c/InstrProfilingMerge.c",
-        "c/InstrProfilingPlatformLinux.c",
+        // TODO
+        //"c/InstrProfilingPlatformLinux.c",
+        "c/InstrProfilingPlatformWindows.c",
         "c/InstrProfilingWriter.c",
         "c/InstrProfilingValue.c",
         "c/InstrProfilingVersionVar.c",
