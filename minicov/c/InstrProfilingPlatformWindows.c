@@ -70,4 +70,8 @@ COMPILER_RT_VISIBILITY int __llvm_write_binary_ids(ProfDataWriter *Writer) {
   return 0;
 }
 
+#if MINICOV_UEFI == 1
+void ___chkstk_ms() {}
+#endif
+
 #endif
